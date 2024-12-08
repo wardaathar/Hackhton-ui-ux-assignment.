@@ -6,7 +6,7 @@ import MainContent from "@/components/MainContent";
 import CheckoutPage from "./Checkoutpage/page";
 import Page404 from "./Page404/page";
 import SignupPage from "./Signuppage/page";
-import SignInPage from "./Signinpage/page";
+import SignInPage from "./SignInpage/page";
 
 
 export default function Home() {
@@ -18,8 +18,7 @@ export default function Home() {
           <Footer/>
           <MainContent/>
           <SignupPage/>
-          <SigninPage/>
-
+          <SignInPage/>
           
         </main> 
   
