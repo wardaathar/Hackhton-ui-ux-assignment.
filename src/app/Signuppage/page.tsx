@@ -5,7 +5,7 @@ import { IoChevronForwardOutline } from "react-icons/io5";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Header";
 
-export default function SignInPage() {
+export default function SignUpPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -24,7 +24,7 @@ export default function SignInPage() {
           <p className="text-sm md:text-base lg:text-lg mt-2 flex items-center gap-2">
             <span className="text-white ">Home</span>
             <IoChevronForwardOutline />
-            <span className="text-[#FF9F0D]">Sign In</span>
+            <span className="text-[#FF9F0D]">Sign Up</span>
           </p>
         </div>
       </div>
@@ -36,7 +36,7 @@ export default function SignInPage() {
           <h3 className="text-2xl font-bold mb-6 text-center">Sign In</h3>
           <form>
             <div className="mb-4">
-              <label className="block mb-2 font-medium">Name</label>
+              <label className="block mb-2 font-medium"> Full Name</label>
               <input
                 type="text"
                 className="w-full border rounded px-3 py-2 focus:ring focus:ring-yellow-300"
@@ -61,7 +61,7 @@ export default function SignInPage() {
             </div>
             <div className="flex items-center mb-4">
               <input type="checkbox" className="mr-2" />
-              <span>Remember me?</span>
+              <span>Submit</span>
             </div>
             <button
               type="submit"
@@ -69,19 +69,17 @@ export default function SignInPage() {
             >
               Sign In
             </button>
-            <p className="text-center mt-4">
-              <Link href="/forgot-password" className="text-yellow-500">Forgot password?</Link>
-            </p>
+          
           </form>
           <div className="text-center mt-8">
             <p>or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
               <img src="public/assets/Google.svg" alt="Google" className="h-6 mr-2" />
-              Sign in with Google
+              Sign Up with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
               <img src="public/assets/Apple.svg" alt="Apple" className="h-6 mr-2" />
-              Sign in with Apple
+              Sign Up with Apple
             </button>
           </div>
         </div>
