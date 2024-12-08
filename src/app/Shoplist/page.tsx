@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from "next/image";
-import menu from "../assets/menu.png";
+import menu from "../public/menu.png";
 
 const menuItems = [
   { name: 'Lettuce Leaf', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu1.png' },

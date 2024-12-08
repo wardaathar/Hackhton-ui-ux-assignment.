@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import { FaCheck } from "react-icons/fa6";
 
-import pic1 from "../assets/about1.png";
-import pic2 from "../assets/about2.png";
-import pic3 from "../assets/about3.png";
+import pic1 from ".../app/public/about1.png";
+import pic2 from ".../public/about2.png";
+import pic3 from ".../public/about3.png";
 
 function AboutUs() {
   return (

@@ -14,11 +14,8 @@ export default function Home() {
    
         <main>
           <Header/>
-          <Hero/>
-          <Footer/>
-          <MainContent/>
-          <SignupPage/>
-          <SignInPage/>
+         <Footer/>
+        
           
         </main> 
   

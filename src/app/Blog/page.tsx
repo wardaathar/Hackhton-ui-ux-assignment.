@@ -1,4 +1,4 @@
-
+/*
 
 import { useParams } from "react-router-dom";
 import { Icon } from "src/components/Icon";
@@ -152,4 +152,4 @@ export const BlogSinglePage = () => {
     </main>
   );
 };
-
+*/

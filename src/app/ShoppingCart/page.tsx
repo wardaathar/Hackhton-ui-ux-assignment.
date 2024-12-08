@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const initialCartItems = [
-  { name: "Burger", price: 10.99, quantity: 2, image: "/path/to/burger.jpg" },
-  { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/path/to/fresh-lime.jpg" },
-  { name: "Pizza", price: 9.99, quantity: 4, image: "/path/to/pizza.jpg" },
-  { name: "Chocolate Muffin", price: 4.49, quantity: 1, image: "/path/to/muffin.jpg" },
-  { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/path/to/cheese-butter.jpg" },
+  { name: "Burger", price: 10.99, quantity: 2, image: "//public//burger.jpg" },
+  { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/public//fresh-lime.jpg" },
+  { name: "Pizza", price: 9.99, quantity: 4, image: "/public/pizza.jpg" },
+  { name: "Chocolate Muffin", price: 4.49, quantity: 1, image: "/public/muffin.jpg" },
+  { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/public/cheese-butter.jpg" },
 ];
 
 const ShoppingCart: React.FC = () => {

@@ -4,10 +4,10 @@ import React from "react";
 
 import Image from "next/image";
 
-import chef1 from "../assets/Chef Card 1.png";
-import chef2 from "../assets/Card 2.png";
-import chef3 from "../assets/Card 3.png";
-import chef4 from "../assets/Card 4.png";
+import chef1 from "../public/Chef Card 1.png";
+import chef2 from "../public/Card 2.png";
+import chef3 from "../public/Card 3.png";
+import chef4 from "../public/Card 4.png";
 
  
 function Ourchef() {
