@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Hero from '@/components/Hero'
+import Hero from '@/components/Hero';
+import MainContent from "@/components/MainContent";
+import CheckoutPage from "./Checkoutpage/page";
+import Page404 from "./Page404/page";
+import SignupPage from "./Signuppage/page";
+import SignInPage from "./Signinpage/page";
+
 
 export default function Home() {
   return (
@@ -10,6 +16,10 @@ export default function Home() {
           <Header/>
           <Hero/>
           <Footer/>
+          <MainContent/>
+          <SignupPage/>
+          <SigninPage/>
+
           
         </main> 
   
