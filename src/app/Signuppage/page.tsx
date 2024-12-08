@@ -21,7 +21,7 @@ export default function SignUpPage() {
       {/* Hero Section */}
       <section
         className="bg-cover bg-center h-64 flex items-center justify-center"
-        style={{ backgroundImage: "url('../public/rect.png')" }}
+        style={{ backgroundImage: "url('@/public/rect.png')" }}
       >
         <div className="text-center text-white">
           <h2 className="text-4xl font-bold">Sign up page</h2>

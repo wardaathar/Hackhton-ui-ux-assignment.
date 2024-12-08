@@ -8,10 +8,10 @@ const  Food_cateigary = () => {
 
 // Items array containing food details
   const items = [
-    { id: 1, img: "/public/imgitem1.png", label: "Save 50% on Fast Food" },
-    { id: 2, img: "/images/food2.jpg", label: "Delicious Burgers" },
-    { id: 3, img: "/images/food3.jpg", label: "Healthy Salads" },
-    { id: 4, img: "/images/food4.jpg", label: "Desserts" },
+    { id: 1, img: "@/public/food.1, label: "Save 50% on Fast Food" },
+    { id: 2, img: "/public/food2.jpg", label: "Delicious Burgers" },
+    { id: 3, img: "/public/food3.jpg", label: "Healthy Salads" },
+    { id: 4, img: "/public/food4.jpg", label: "Desserts" },
   ];
 
   return (
