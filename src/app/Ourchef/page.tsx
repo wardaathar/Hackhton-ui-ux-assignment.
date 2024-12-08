@@ -3,9 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import chef1 from "@/public/Cart1.png";
-import chef2 from "@cart2.png";
-import chef3 from "../public/Cart3.png";
-import chef4 from "../public/Cart4.png";
+import chef2 from "@/public/cart2.png";
+import chef3 from "@/public/Cart3.png";
+import chef4 from "@/public/Cart4.png";
 
 
 function Ourchef() {
