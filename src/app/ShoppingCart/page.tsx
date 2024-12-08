@@ -1,8 +1,9 @@
+"use client"
 import React, { useState } from 'react';
 
 const initialCartItems = [
-  { name: "Burger", price: 10.99, quantity: 2, image: "//public//burger.jpg" },
-  { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/public//fresh-lime.jpg" },
+  { name: "Burger", price: 10.99, quantity: 2, image: "/public/burger.png" },
+  { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/public/fresh-lime.jpg" },
   { name: "Pizza", price: 9.99, quantity: 4, image: "/public/pizza.jpg" },
   { name: "Chocolate Muffin", price: 4.49, quantity: 1, image: "/public/muffin.jpg" },
   { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/public/cheese-butter.jpg" },
@@ -14,10 +15,12 @@ const ShoppingCart: React.FC = () => {
   const [discount, setDiscount] = useState(0);
 
   const handleQuantityChange = (index: number, newQuantity: number) => {
-    const updatedItems = cartItems.map((item, i) =>
-      i === index ? { ...item, quantity: newQuantity } : item
-    );
-    setCartItems(updatedItems);
+    if (newQuantity >= 0) { // Ensure non-negative quantity
+      const updatedItems = cartItems.map((item, i) =>
+        i === index ? { ...item, quantity: newQuantity } : item
+      );
+      setCartItems(updatedItems);
+    }
   };
 
   const handleRemoveItem = (index: number) => {
@@ -25,11 +28,7 @@ const ShoppingCart: React.FC = () => {
   };
 
   const handleApplyCoupon = () => {
-    if (couponCode === "DISCOUNT10") {
-      setDiscount(0.1); // 10% discount
-    } else {
-      setDiscount(0);
-    }
+    setDiscount(couponCode === "DISCOUNT10" ? 0.1 : 0); // 10% discount
   };
 
   const cartSubtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -70,7 +69,7 @@ const ShoppingCart: React.FC = () => {
                   />
                 </td>
                 <td className="p-4">${(item.price * item.quantity).toFixed(2)}</td>
-                <td className="p-4 text-red-500 cursor-pointer" onClick={() => handleRemoveItem(index)}>
+                <td className="p-4 text-red-500 cursor-pointer" onClick={() => handleRemoveItem(index)} aria-label={`Remove ${item.name}`}>
                   &times;
                 </td>
               </tr>
@@ -126,3 +125,5 @@ const ShoppingCart: React.FC = () => {
     </div>
   );
 };
+
+export default ShoppingCart;
