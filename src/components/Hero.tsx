@@ -1,6 +1,6 @@
 import Navbar from  "@/components/Navbar";
 import Image from "next/image";
-import plate from "./Image.png"
+import plate from "@/public/heropic.png"
 
 export default function Hero(){
   return(

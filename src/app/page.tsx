@@ -14,7 +14,13 @@ export default function Home() {
    
         <main>
           <Header/>
+          <Hero/>
          <Footer/>
+         <MainContent/>
+         <CheckoutPage/>
+         <SignInPage/>
+         <SignupPage/>
+         <Page404/>
         
           
         </main> 
