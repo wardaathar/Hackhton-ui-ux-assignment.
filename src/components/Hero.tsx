@@ -11,7 +11,7 @@ export default function Hero(){
               <h3 className="text-yellow-500 font-sans">Its Quick & Amusing</h3>
           
               <h1 className="text-white font-bold font-bolf sm:text-md md:text-3xl lg:text-5xl flex flex-row mt-2" > 
-   <div className="text-yellow-400">Th</div>e Art of Speed</h1>
+   <div className="text-yellow-400"></div>The Art of Speed</h1>
               <h2 className="text-white font-bolf sm:text-md md:text-3xl lg:text-5xl pt-4">Food Quality</h2>
         {/* timer */}
       <div className="flex sm:flex-wrap sm:justify-start md:justify-start pt-5 pb-4 gap-4">
@@ -26,7 +26,7 @@ export default function Hero(){
   </div>
 
 {/* image */}
-<div className="sm-w-full md:w-[30%] lg:w-[30%] pl-7 justify-center items-center flex flex-row">
+<div className="sm-w-full md:w-[30%] lg:w-[40%] pl-7 justify-center items-center flex flex-row">
   <Image src= {plate} alt="plate" 
   className="w-50 h-auto shadow-md "/>
 
