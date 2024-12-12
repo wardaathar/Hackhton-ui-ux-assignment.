@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import footer1 from "../public/footer1.png"; // Ensure these images are in the `public` folder
 import footer2 from "../public/footer2.png";
 import footer3 from "../public/footer3.png";
@@ -67,8 +66,8 @@ const Footer = () => {
           <ul className="text-gray-400 mt-4 space-y-2">
             {["About", "News", "Partner", "Team", "Menu", "Contact"].map((link) => (
               <li key={link}>
-                <Link href={`/${link.toLowerCase()}`}>
-                  <a className="hover:underline">{link}</a>
+                <Link href={`/${link.toLowerCase()}`} className="hover:underline">
+                  {link}
                 </Link>
               </li>
             ))}
@@ -81,8 +80,8 @@ const Footer = () => {
           <ul className="text-gray-400 mt-4 space-y-2">
             {["FAQ", "Terms & Conditions", "Reporting", "Documentation", "Support Policy", "Privacy"].map((item) => (
               <li key={item}>
-                <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`}>
-                  <a className="hover:underline">{item}</a>
+                <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`} className="hover:underline">
+                  {item}
                 </Link>
               </li>
             ))}
@@ -109,7 +108,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="bg-gray-100 dark:bg-[#4F4F4F] px-6 py-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 dark:text-gray-300">
-          © 2023 <Link href="https://flowbite.com"><a>Copy™</a></Link>. All Rights Reserved.
+          © 2023 <Link href="https://flowbite.com" className="hover:underline">Copy™</Link>. All Rights Reserved.
         </span>
         <div className="flex justify-center gap-4 mt-4 md:mt-0">
           {[FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterest].map((Icon, index) => (
