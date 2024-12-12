@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Figma Template 9",
   description: "Hackhaton Q2",
 };
 

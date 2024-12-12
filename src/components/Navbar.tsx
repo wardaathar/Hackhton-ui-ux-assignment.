@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5"; // Search Icon
 import { PiHandbagBold } from "react-icons/pi"; // Shopping Bag Icon
@@ -23,27 +23,27 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center justify-between flex-1 ml-8">
           {/* Navigation Links */}
           <div className="flex space-x-6">
-            <a href="#home" className="hover:text-orange-500 transition">
+            <Link href="#home" className="hover:text-orange-500 transition">
               Home
-            </a>
-            <a href="#menu" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="#menu" className="hover:text-orange-500 transition">
               Menu
-            </a>
-            <a href="#blog" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="#blog" className="hover:text-orange-500 transition">
               Blog
-            </a>
-            <a href="#pages" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="#pages" className="hover:text-orange-500 transition">
               Pages
-            </a>
-            <a href="#about" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="#about" className="hover:text-orange-500 transition">
               About
-            </a>
-            <a href="#shop" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="#shop" className="hover:text-orange-500 transition">
               Shop
-            </a>
-            <a href="#contact" className="hover:text-orange-500 transition">
+            </Link>
+            <Link href="#contact" className="hover:text-orange-500 transition">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Search Bar */}
@@ -70,33 +70,32 @@ export default function Navbar() {
 
       {/* Collapsible Menu for Small Screens */}
       <div
-        className={`${
-          isMenuOpen ? "block" : "hidden"
-        } lg:hidden bg-black text-white mt-4 space-y-4 px-6`}
+        className={`${isMenuOpen ? "block" : "hidden"
+          } lg:hidden bg-black text-white mt-4 space-y-4 px-6`}
       >
         {/* Navigation Links */}
         <div className="flex flex-col space-y-4">
-          <a href="#home" className="hover:text-orange-500 transition">
+          <Link href="#home" className="hover:text-orange-500 transition">
             Home
-          </a>
-          <a href="#menu" className="hover:text-orange-500 transition">
+          </Link>
+          <Link href="#menu" className="hover:text-orange-500 transition">
             Menu
-          </a>
-          <a href="#blog" className="hover:text-orange-500 transition">
+          </Link>
+          <Link href="#blog" className="hover:text-orange-500 transition">
             Blog
-          </a>
-          <a href="#pages" className="hover:text-orange-500 transition">
+          </Link>
+          <Link href="#pages" className="hover:text-orange-500 transition">
             Pages
-          </a>
-          <a href="#about" className="hover:text-orange-500 transition">
+          </Link>
+          <Link href="#about" className="hover:text-orange-500 transition">
             About
-          </a>
-          <a href="#shop" className="hover:text-orange-500 transition">
+          </Link>
+          <Link href="#shop" className="hover:text-orange-500 transition">
             Shop
-          </a>
-          <a href="#contact" className="hover:text-orange-500 transition">
+          </Link>
+          <Link href="#contact" className="hover:text-orange-500 transition">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Search Bar */}
