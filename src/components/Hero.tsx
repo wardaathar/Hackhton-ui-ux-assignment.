@@ -1,4 +1,3 @@
-import Navbar from  "@/components/Navbar";
 import Image from "next/image";
 import plate from "@/public/heropic.png"
 

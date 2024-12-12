@@ -1,34 +1,33 @@
-
-
 import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Header";
+import Image from "next/image"; // Import next/image for image optimization
 
 export default function SignInPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="relative bg-black">
-      {/* Background Image */}
-      <div
-        className="h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center"
-        style={{ backgroundImage: "url('@/public/rect.png')" }}>
-    
-        {/* Navbar */}
-        <Navbar />
-      
-        {/* Centered Text */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">Sign In page</h1>
-          <p className="text-sm md:text-base lg:text-lg mt-2 flex items-center gap-2">
-            <span className="text-white ">Home</span>
-            <IoChevronForwardOutline />
-            <span className="text-[#FF9F0D]">Sign In</span>
-          </p>
+        {/* Background Image */}
+        <div
+          className="h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center"
+          style={{ backgroundImage: "url('/rect.png')" }} // Updated image path
+        >
+          {/* Navbar */}
+          <Navbar />
+
+          {/* Centered Text */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">Sign In page</h1>
+            <p className="text-sm md:text-base lg:text-lg mt-2 flex items-center gap-2">
+              <span className="text-white ">Home</span>
+              <IoChevronForwardOutline />
+              <span className="text-[#FF9F0D]">Sign In</span>
+            </p>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
       {/* Signin Form */}
       <section className="py-16">
@@ -76,11 +75,13 @@ export default function SignInPage() {
           <div className="text-center mt-8">
             <p>or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <img src="..public/Google.svg" alt="Google" className="h-6 mr-2" />
+              {/* Using next/image for Google image */}
+              <Image src="/Google.svg" alt="Google" width={24} height={24} className="mr-2" />
               Sign in with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <img src="../public/Apple.svg" alt="Apple" className="h-6 mr-2" />
+              {/* Using next/image for Apple image */}
+              <Image src="/Apple.svg" alt="Apple" width={24} height={24} className="mr-2" />
               Sign in with Apple
             </button>
           </div>
@@ -88,7 +89,7 @@ export default function SignInPage() {
       </section>
 
       {/* Footer */}
-     <Footer />
+      <Footer />
     </div>
   );
 }
