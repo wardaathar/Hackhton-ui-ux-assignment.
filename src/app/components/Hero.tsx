@@ -1,5 +1,5 @@
 import Image from "next/image";
-import plate from "@/public/heropic.png"
+import plate from "../public/ricecucumber.png"
 
 export default function Hero(){
   return(

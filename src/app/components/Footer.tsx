@@ -96,7 +96,7 @@ const Footer = () => {
               <li key={index} className="flex gap-4">
                 <Image src={image} alt={`Post ${index + 1}`} width={50} height={50} />
                 <div>
-                  <p className="text-gray-400 text-sm">20 Feb 2022</p>
+                  <p className="text-gray-400 text-sm">20 Feb 2024</p>
                   <p className="text-white text-base">Keep Your Business</p>
                 </div>
               </li>

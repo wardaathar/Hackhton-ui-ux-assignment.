@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from "next/image";
-import menu from "@/public/menu.png";
+import menu from "../public/menu.png";
 
 const menuItems = [
   { name: 'Lettuce Leaf', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/menu1.png' },
@@ -17,6 +17,7 @@ const menuItems = [
 
 const MenuCom = () => {
   return (
+    <div className='shoplist'>
     <section className='bg-black px-8 sm:px-16 lg:px-[135px] text-white py-12'>
       <div className="container mx-auto">
         <h2 className="text-2xl font-bold text-center mb-2">Choose & Pick</h2>
@@ -34,7 +35,7 @@ const MenuCom = () => {
           </ul>
         </div>
 
-        <div id='pages' className='flex flex-col lg:flex-row'>
+        <div  className='flex flex-col lg:flex-row'>
           {/* Left Section: Decorative Image */}
           <div className="hidden lg:block w-1/3 md:w-[50%]">
             <Image src={menu} alt="Menu Decor" layout="responsive" />
@@ -58,6 +59,7 @@ const MenuCom = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

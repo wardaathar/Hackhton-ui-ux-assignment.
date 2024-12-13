@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Header";
+import Footer from "./Footer"
+import Navbar from "./Navbar";
 import Image from "next/image"; // Import next/image for image optimization
 
 export default function SignInPage() {

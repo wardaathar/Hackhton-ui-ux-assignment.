@@ -1,15 +1,19 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Hero from '@/components/Hero';
+"use client"
+import Hero from '../app/components/Hero';
+import CheckoutPage from './components/checkout';
+import SignInPage from './components/SigIn';
+
 
 
 export default function Home() {
   return (
    
         <main>
-         <Header/> 
+           
           <Hero/>
-         <Footer/>
+         <CheckoutPage/>
+         
+        
         </main> 
   
   );

@@ -14,7 +14,8 @@ export default function Navbar() {
   return (
     <nav className="bg-black text-white shadow-md">
       <div className="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
-      
+      <h2 className="text-[24px] font-bold"><span className="text-[#FF9F0D]">Food</span>Tuck</h2>
+
 
         {/* Large Screen Navigation */}
         <div className="hidden lg:flex items-center justify-between flex-1 ml-8">
@@ -75,7 +76,7 @@ export default function Navbar() {
           <Link href="#home" className="hover:text-orange-500 transition">
             Home
           </Link>
-          <Link href="#menu" className="hover:text-orange-500 transition">
+          <Link  href="#menu" className="hover:text-orange-500 transition">
             Menu
           </Link>
           <Link href="#blog" className="hover:text-orange-500 transition">

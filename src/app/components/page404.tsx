@@ -1,9 +1,11 @@
 import React from 'react';
-import MainContent from '@/components/MainContent';
+import MainContent from '@/app/components/MainContent';
 const Page404: React.FC = () => {
   return (
-    <div  id="pages" className="bg-white">
+    <div className='page404'>
+    <div  className="bg-white">
       <MainContent />
+    </div>
     </div>
   );
 };
