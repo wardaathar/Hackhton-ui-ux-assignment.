@@ -24,22 +24,22 @@ export default function Navbar() {
             <Link href="#home" className="hover:text-orange-500 transition">
               Home
             </Link>
-            <Link href="#menu" className="hover:text-orange-500 transition">
+            <Link href="/menu" className="hover:text-orange-500 transition">
               Menu
             </Link>
-            <Link href="#blog" className="hover:text-orange-500 transition">
+            <Link href="/blog" className="hover:text-orange-500 transition">
               Blog
             </Link>
-            <Link href="#pages" className="hover:text-orange-500 transition">
+            <Link href="/pages" className="hover:text-orange-500 transition">
               Pages
             </Link>
-            <Link href="#about" className="hover:text-orange-500 transition">
+            <Link href="/about" className="hover:text-orange-500 transition">
               About
             </Link>
-            <Link href="#shop" className="hover:text-orange-500 transition">
+            <Link href="/shop" className="hover:text-orange-500 transition">
               Shop
             </Link>
-            <Link href="#contact" className="hover:text-orange-500 transition">
+            <Link href="/contact" className="hover:text-orange-500 transition">
               Contact
             </Link>
           </div>
@@ -73,25 +73,25 @@ export default function Navbar() {
       >
         {/* Navigation Links */}
         <div className="flex flex-col space-y-4">
-          <Link href="#home" className="hover:text-orange-500 transition">
+          <Link href="/home" className="hover:text-orange-500 transition">
             Home
           </Link>
-          <Link  href="#menu" className="hover:text-orange-500 transition">
+          <Link  href="/menu" className="hover:text-orange-500 transition">
             Menu
           </Link>
-          <Link href="#blog" className="hover:text-orange-500 transition">
+          <Link href="/blog" className="hover:text-orange-500 transition">
             Blog
           </Link>
-          <Link href="#pages" className="hover:text-orange-500 transition">
+          <Link href="/pages" className="hover:text-orange-500 transition">
             Pages
           </Link>
-          <Link href="#about" className="hover:text-orange-500 transition">
+          <Link href="/about" className="hover:text-orange-500 transition">
             About
           </Link>
-          <Link href="#shop" className="hover:text-orange-500 transition">
+          <Link href="/shop" className="hover:text-orange-500 transition">
             Shop
           </Link>
-          <Link href="#contact" className="hover:text-orange-500 transition">
+          <Link href="/contact" className="hover:text-orange-500 transition">
             Contact
           </Link>
         </div>
