@@ -7,7 +7,7 @@ import pic3 from "../public/about4.png";
 
 function AboutUs() {
   return (
-    <div id="about">
+    <div id="#about">
     <section  className="bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
       {/* Heading */}
       <div  className="text-white w-full md:w-[50%]">
