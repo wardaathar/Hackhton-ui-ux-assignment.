@@ -4,7 +4,7 @@ import plate from "@/public/heropic.png"
 export default function Hero(){
   return(
       
-      <main className="w-full flex justify-center items-center ">
+      <main id="home" className="w-full flex justify-center items-center ">
       <div className="sm:w-full md:w-[100%] sm:p-5 sm:h--auto md:h-[500px] flex sm:flex-row sm:justify-start md:justify-center sm:items-start md:items-center bg-black w-1390">
          <div className="sm:w-full md:w-[50%] p-4 ">
               <h3 className="text-yellow-500 font-sans">Its Quick & Amusing</h3>

@@ -34,7 +34,7 @@ const MenuCom = () => {
           </ul>
         </div>
 
-        <div className='flex flex-col lg:flex-row'>
+        <div id='chef' className='flex flex-col lg:flex-row'>
           {/* Left Section: Decorative Image */}
           <div className="hidden lg:block w-1/3 md:w-[50%]">
             <Image src={menu} alt="Menu Decor" layout="responsive" />

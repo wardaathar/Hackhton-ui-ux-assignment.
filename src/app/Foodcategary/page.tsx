@@ -11,7 +11,7 @@ const Food_cateigary = () => {
   ];
 
   return (
-    <div>
+    <div id='food'>
       <section className="bg-black text-white py-16 px-6">
         <div className="container mx-auto text-center">
           {/* Title */}
