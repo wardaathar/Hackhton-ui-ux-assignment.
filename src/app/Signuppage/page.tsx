@@ -3,7 +3,7 @@ import Image from "next/image"; // Import next/image for image optimization
 
 export default function SignUpPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div id="pages" className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-black text-white">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
