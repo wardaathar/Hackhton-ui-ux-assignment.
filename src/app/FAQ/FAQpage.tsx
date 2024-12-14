@@ -4,7 +4,7 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <main className="/faq">
+    <main id="/faq">
       {/* Title */}
       <h1 className="mt-[100px] text-black text-center text-[40px] font-semibold capitalize">
         Questions look here

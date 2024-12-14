@@ -4,7 +4,7 @@ import image from '../public/rect.png';
 
 const MenuPage: React.FC = () => {
   return (
-    <div className='#menu'>
+    <div id="/menu">
     <div className="bg-white font-sans">
       <header className="bg-cover bg-center h-48 flex items-center justify-center" style={{ backgroundImage: 'url(/path/to/header-bg.jpg)' }}>
         <h1 className="text-5xl font-bold text-white tracking-wide">Our Menu</h1>

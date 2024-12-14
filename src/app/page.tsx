@@ -1,21 +1,18 @@
 "use client"
 import Hero from '../app/components/Hero';
-import CheckoutPage from './components/checkout';
 
-
+import Navbar from './components/Navbar';
 
 
 export default function Home() {
   return (
-   
-        <main>
-          
-          <Hero/>
-          
-         <CheckoutPage/>
-         
-        
-        </main> 
-  
+
+    <main>
+
+      <Hero />
+    
+
+    </main>
+
   );
 }
