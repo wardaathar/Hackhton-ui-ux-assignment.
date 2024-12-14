@@ -10,7 +10,7 @@ export default function SignUpPage() {
     <>
       <Hero />
 
-      <div className="min-h-screen bg-white">
+      <div  id="/signup" className="min-h-screen bg-white">
         {/* Signup Form */}
         <section className="py-16">
           <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
