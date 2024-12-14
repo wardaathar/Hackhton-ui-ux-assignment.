@@ -10,7 +10,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterest } from "rea
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-black">
+    <footer className= "bg-black">
       {/* Support Section */}
       <div className="flex flex-col md:flex-row justify-between items-center bg-black px-6 md:px-20 lg:px-[135px] py-6 md:py-12">
         <div className="text-white md:w-[50%] w-full">

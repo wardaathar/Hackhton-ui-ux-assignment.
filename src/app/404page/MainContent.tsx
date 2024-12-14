@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContent: React.FC = () => {
   return (
-    <main  id='/reporting'className="text-center py-20">
+    <main  id='/reporting' className="text-center py-20">
       <h2 className="text-6xl font-bold text-orange-500">404</h2>
       <p className="text-2xl font-bold text-gray-800 mt-4">Oops! Look likes something going wrong</p>
       <p className="text-lg text-gray-600 mt-2">

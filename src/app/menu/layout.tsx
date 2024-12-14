@@ -1,10 +1,11 @@
 import React from 'react';
-import "../components/Hero"
-import Menu from "./pagr"
+import MenuPage from '../components/Menupage';
+
+
 const layout = () => {
   return (
     <div>
-      <Menu/>
+     <MenuPage/>
       
     </div>
   )

@@ -1,13 +1,12 @@
-import React from 'react'
-import layout from "../about/layout";
+import React from 'react';
 import AboutUs from './Aboutus';
 
 
 const About = () => {
   return (
     <div>
-      
-      <About/>
+    
+      <AboutUs/>
       
     </div>
   )

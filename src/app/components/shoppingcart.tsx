@@ -37,7 +37,7 @@ const ShoppingCart: React.FC = () => {
   const totalAmount = cartSubtotal - cartSubtotal * discount + shippingCharges;
 
   return (
-    <div id='/shop' className="bg-white font-sans">
+    <div id='/shop' className="bg-black font-sans">
       <header className="bg-cover bg-center h-48 flex items-center justify-center" style={{ backgroundImage: 'url(/path/to/header-bg.jpg)' }}>
         <h1 className="text-5xl font-bold text-white tracking-wide">Shopping Cart</h1>
       </header>

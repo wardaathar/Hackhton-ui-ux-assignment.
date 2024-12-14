@@ -3,7 +3,8 @@ import cheakout from "../public/Tote.png"
 
 export default function CheckoutPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <main className="bg-black">
+    <div className="container bg mx-auto px-4 py-8">
       <div className="grid gap-8 lg:grid-cols-2">
         {/* Left Column - Forms */}
         <div className="space-y-6">
@@ -214,5 +215,6 @@ export default function CheckoutPage() {
         </div>
       </div>
     </div>
+    </main>
   )
 }
