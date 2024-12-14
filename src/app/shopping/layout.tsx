@@ -1,9 +1,9 @@
 import React from 'react';
-import Shoplist from './Shoplist';
+import Shop from '../shop/page';
 
 const layout = () => {
   return (
-    <div> <Shoplist /> </div>
+    <div> <Shop /> </div>
   )
 }
 
