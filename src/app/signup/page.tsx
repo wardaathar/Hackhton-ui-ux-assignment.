@@ -10,10 +10,11 @@ export default function SignUpPage() {
     <>
       <Hero />
 
-      <div  id="/signup" className="min-h-screen bg-white">
+      <div  id="/signup" className="min-h-screen bg-black">
         {/* Signup Form */}
         <section className="py-16">
-          <div className="container mx-auto max-w-md bg-white shadow-lg rounded-md p-8">
+          <div className="container mx-auto max-w-md text-white bg-black
+           shadow-lg rounded-md p-8">
             <h3 className="text-2xl font-bold mb-6 text-center">Sign Up</h3>
             <form>
               <div className="mb-4">

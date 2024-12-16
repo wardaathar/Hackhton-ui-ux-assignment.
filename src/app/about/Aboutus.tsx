@@ -4,11 +4,13 @@ import { FaCheck } from "react-icons/fa6";
 import pic1 from "../public/about.png";
 import pic2 from "../public/about3.png";
 import pic3 from "../public/about4.png";
+import Heropage from "./Hero"
 
 function AboutUs() {
   return (
     
     <div className="/about">
+      <Heropage/>
     
     <section  className="bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
     

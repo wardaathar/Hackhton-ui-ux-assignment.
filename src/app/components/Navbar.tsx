@@ -27,8 +27,8 @@ export default function Navbar() {
             <Link href="/menu" className="hover:text-orange-500 transition">
               Menu
             </Link>
-            <Link href="#blog" className="hover:text-orange-500 transition">
-              Blog
+            <Link href="/food" className="hover:text-orange-500 transition">
+            Food
             </Link>
             <Link href="/signup" className="hover:text-orange-500 transition">
               Signup
@@ -36,7 +36,7 @@ export default function Navbar() {
             <Link href="/about" className="hover:text-orange-500 transition">
               About
             </Link>
-            <Link href="#shop" className="hover:text-orange-500 transition">
+            <Link href="/shop" className="hover:text-orange-500 transition">
               Shop
             </Link>
             <Link href="/contact" className="hover:text-orange-500 transition">
@@ -79,8 +79,9 @@ export default function Navbar() {
           <Link  href="/menu" className="hover:text-orange-500 transition">
             Menu
           </Link>
-          <Link href="#blog" className="hover:text-orange-500 transition">
-            Blog
+          <Link href="/food" className="hover:text-orange-500 transition">
+           
+           Food
           </Link>
           <Link href="/signup" className="hover:text-orange-500 transition">
            Signup
@@ -88,7 +89,7 @@ export default function Navbar() {
           <Link href="/about" className="hover:text-orange-500 transition">
             About
           </Link>
-          <Link href="#shop" className="hover:text-orange-500 transition">
+          <Link href="/shop" className="hover:text-orange-500 transition">
             Shop
           </Link>
           <Link href="/contact" className="hover:text-orange-500 transition">
