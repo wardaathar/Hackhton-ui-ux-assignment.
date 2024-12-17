@@ -1,10 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import image from '../public/rect.png';
+import Food from "../components/checkout";
+import Food2 from "../shops/Shop";
 
 const MenuPage: React.FC = () => {
   return (
     <div id="/menu">
+       <Food2/>
+       <Food/>
     <div className="bg-white font-sans">
       <header className="bg-cover bg-center h-48 flex items-center justify-center" style={{ backgroundImage: 'url(/path/to/header-bg.jpg)' }}>
         <h1 className="text-5xl font-bold text-white tracking-wide">Our Menu</h1>
@@ -19,8 +23,8 @@ const MenuPage: React.FC = () => {
               <Image
                 src={image}
                 alt="Aloo Samosas"
-                width={500}
-                height={500}
+                width={100}
+                height={100}
                 className="w-24 h-24 object-cover rounded mr-4"
               />
               <div>

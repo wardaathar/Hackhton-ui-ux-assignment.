@@ -6,12 +6,12 @@ import Image from 'next/image';  // Import the Image component
 const initialCartItems = [
   { name: "Burger", price: 10.99, quantity: 2, image: "/cart1.png" },
   { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/cart2.png" },
-  { name: "Pizza", price: 9.99, quantity: 4, image: "/cart3.png" },
-  { name: "Chocolate Muffin", price: 4.49, quantity: 1, image: "/cart4.png" },
-  { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/cart5.png" },
+  { name: "Pizza", price: 9.99, quantity: 4, image: "/food1.png" },
+  { name: "Chocolate Muffin", price: 4.49, quantity: 1, image: "/dessert.png" },
+  { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/cart4.png" },
 ];
 
-const ShoppingCart: React.FC = () => {
+const Shops: React.FC = () => {
   const [cartItems, setCartItems] = useState(initialCartItems);
   const [couponCode, setCouponCode] = useState("");
   const [discount, setDiscount] = useState(0);
@@ -40,14 +40,15 @@ const ShoppingCart: React.FC = () => {
   const totalAmount = cartSubtotal - cartSubtotal * discount + shippingCharges;
 
   return (
-    <div className="bg-white font-sans">
-      <header className="bg-cover bg-center h-48 flex items-center justify-center" style={{ backgroundImage: 'url(/path/to/header-bg.jpg)' }}>
+    <div className='/shops'>
+    <div className="bg-black text-white font-sans">
+      <header className="bg-cover bg-center h-48 flex items-center justify-center">
         <h1 className="text-5xl font-bold text-white tracking-wide">Shopping Cart</h1>
       </header>
       <main className="py-12 px-6 md:px-16 lg:px-28">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-gray-100 text-left">
+            <tr className="bg-black  text-left">
               <th className="p-4 font-semibold">Product</th>
               <th className="p-4 font-semibold">Price</th>
               <th className="p-4 font-semibold">Quantity</th>
@@ -68,7 +69,7 @@ const ShoppingCart: React.FC = () => {
                     type="number"
                     value={item.quantity}
                     onChange={(e) => handleQuantityChange(index, parseInt(e.target.value) || 0)}
-                    className="w-16 border rounded px-2 py-1 text-center"
+                    className="w-16 border  bg-black rounded px-2 py-1 text-center"
                     min="0"
                   />
                 </td>
@@ -102,7 +103,7 @@ const ShoppingCart: React.FC = () => {
           </div>
 
           <div className="w-full lg:w-1/3">
-            <div className="bg-gray-100 p-6 rounded-lg">
+            <div className="bg-gray-100  text-black p-6 rounded-lg">
               <div className="flex justify-between mb-4">
                 <span>Cart Subtotal</span>
                 <span>${cartSubtotal.toFixed(2)}</span>
@@ -127,7 +128,8 @@ const ShoppingCart: React.FC = () => {
         </div>
       </main>
     </div>
+    </div>
   );
 };
 
-export default ShoppingCart;
+export default Shops;

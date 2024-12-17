@@ -2,7 +2,16 @@
 import Link from "next/link";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5"; // Search Icon
-import { PiHandbagBold } from "react-icons/pi"; // Shopping Bag Icon
+import { PiHandbagBold } from "react-icons/pi"; // Handbag Icon
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import ShoppingCart from "../components/shopingCart"; // Importing ShoppingCart component
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +21,11 @@ export default function Navbar() {
   };
 
   return (
-    
     <nav className="bg-black text-white shadow-md">
       <div className="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
-      <h2 className="text-[24px] font-bold"><span className="text-[#FF9F0D]">Food</span>Tuck</h2>
+        <h2 className="text-[24px] font-bold">
+          <span className="text-[#FF9F0D]">Food</span>Tuck
+        </h2>
 
         {/* Large Screen Navigation */}
         <div className="hidden lg:flex items-center justify-between flex-1 ml-8">
@@ -27,17 +37,15 @@ export default function Navbar() {
             <Link href="/menu" className="hover:text-orange-500 transition">
               Menu
             </Link>
-            <Link href="#blog" className="hover:text-orange-500 transition">
-              Blog
-            </Link>
+            
             <Link href="/signup" className="hover:text-orange-500 transition">
               Signup
             </Link>
             <Link href="/about" className="hover:text-orange-500 transition">
               About
             </Link>
-            <Link href="#shop" className="hover:text-orange-500 transition">
-              Shop
+            <Link href="/food" className="hover:text-orange-500 transition">
+              Food
             </Link>
             <Link href="/contact" className="hover:text-orange-500 transition">
               Contact
@@ -53,14 +61,29 @@ export default function Navbar() {
             />
             <IoSearch className="text-orange-500 ml-2" />
           </div>
-
-          {/* Shopping Bag Icon */}
-          <div className="ml-8">
-            <PiHandbagBold className="text-white text-2xl hover:text-orange-500 transition" />
-          </div>
         </div>
 
-        {/* Hamburger Icon (Small Screens) */}
+        <div className="ml-8 flex items-center">
+
+
+          <Sheet>
+            <SheetTrigger>
+              <span className="text-white hover:text-orange-500 cursor-pointer"><PiHandbagBold  /></span>
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>Shopping Cart</SheetTitle>
+                <SheetDescription>
+                  Here is your shopping cart. You can review your items here.
+                </SheetDescription>
+              </SheetHeader>
+              {/* Render ShoppingCart Component inside the Sheet */}
+              <ShoppingCart />
+            </SheetContent>
+          </Sheet>
+        </div>
+
+        {/* Hamburger Icon for Mobile */}
         <div className="lg:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
           {isMenuOpen ? "✕" : "≡"}
         </div>
@@ -68,28 +91,25 @@ export default function Navbar() {
 
       {/* Collapsible Menu for Small Screens */}
       <div
-        className={`${isMenuOpen ? "block" : "hidden"
-          } lg:hidden bg-black text-white mt-4 space-y-4 px-6`}
+        className={`${isMenuOpen ? "block" : "hidden"} lg:hidden bg-black text-white mt-4 space-y-4 px-6`}
       >
         {/* Navigation Links */}
         <div className="flex flex-col space-y-4">
           <Link href="/" className="hover:text-orange-500 transition">
             Home
           </Link>
-          <Link  href="/menu" className="hover:text-orange-500 transition">
+          <Link href="/menu" className="hover:text-orange-500 transition">
             Menu
           </Link>
-          <Link href="#blog" className="hover:text-orange-500 transition">
-            Blog
-          </Link>
+         
           <Link href="/signup" className="hover:text-orange-500 transition">
-           Signup
+            Signup
           </Link>
           <Link href="/about" className="hover:text-orange-500 transition">
             About
           </Link>
-          <Link href="#shop" className="hover:text-orange-500 transition">
-            Shop
+          <Link href="/food" className="hover:text-orange-500 transition">
+            Food
           </Link>
           <Link href="/contact" className="hover:text-orange-500 transition">
             Contact
@@ -106,9 +126,25 @@ export default function Navbar() {
           <IoSearch className="text-orange-500 ml-2" />
         </div>
 
-        {/* Shopping Bag Icon */}
-        <div>
+        {/* Shopping Bag Icon - Mobile */}
+        <div className="mt-4 flex justify-between">
           <PiHandbagBold className="text-white text-2xl hover:text-orange-500 transition" />
+
+          {/* Open Cart on Click for Mobile */}
+          <Sheet>
+            <SheetTrigger>
+              <span className="text-white hover:text-orange-500 cursor-pointer"><PiHandbagBold  /></span>
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle>Shopping Cart</SheetTitle>
+                <SheetDescription>
+                  Here is your shopping cart. You can review your items here.
+                </SheetDescription>
+              </SheetHeader>
+              <ShoppingCart />
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
