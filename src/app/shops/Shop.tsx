@@ -40,10 +40,9 @@ const Shops: React.FC = () => {
   const totalAmount = cartSubtotal - cartSubtotal * discount + shippingCharges;
 
   return (
-    <div className='/shops'>
-    <div className="bg-black text-white font-sans">
-      <header className="bg-cover bg-center h-48 flex items-center justify-center">
-        <h1 className="text-5xl font-bold text-white tracking-wide">Shopping Cart</h1>
+    <div id='/shop' className="bg-black text-white font-sans">
+      <header className="bg-cover bg-center h-48 flex items-center justify-center" >
+        <h1 className="text-5xl font-bold text-white tracking-wide">Shop List</h1>
       </header>
       <main className="py-12 px-6 md:px-16 lg:px-28">
         <table className="w-full border-collapse">
@@ -82,7 +81,7 @@ const Shops: React.FC = () => {
           </tbody>
         </table>
 
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-10">
+        <div className="flex flex-col lg:flex-row justify-between text-white bg-black items-start lg:items-center mt-10">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
             <h2 className="text-lg font-semibold mb-2">Coupon Code</h2>
             <div className="flex items-center">
@@ -128,7 +127,7 @@ const Shops: React.FC = () => {
         </div>
       </main>
     </div>
-    </div>
+
   );
 };
 

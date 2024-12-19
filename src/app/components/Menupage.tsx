@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-
 import pic1 from "../public/pic1.png";
 import pic2 from "../public/pic2.png";
 import pic3 from"../public/pic3.png";
@@ -16,8 +15,8 @@ const MenuPage: React.FC = () => {
   return (
     <div id="/menu">
     <div className="bg-black text-white">
-      <header className="bg-cover bg-center h-48 flex items-center justify-center" style={{ backgroundImage: 'url(rect.png)' }}>
-        <h1 className="text-5xl font-bold text-white tracking-wide">Our Menu</h1>
+      <header className="bg-cover bg-center h-48 flex items-center justify-center" >
+        <h1 className="text-5xl font-bold text-white tracking-wide">Food Categary</h1>
       </header>
 
       <main className="py-12 px-6 md:px-16 lg:px-28">
@@ -112,10 +111,18 @@ const MenuPage: React.FC = () => {
             <div>
               <h3 className="text-4xl font-bold">420+</h3>
               <p className="text-sm text-gray-600">Satisfied Customers</p>
+              <Image
+                src={drinks}
+                alt=""
+                width={100}
+                height={100}
+                className="w-24 h-24 object-cover rounded mr-4"
+              />
             </div>
             <div>
               <h3 className="text-4xl font-bold">250+</h3>
               <p className="text-sm text-gray-600">Dishes Served</p>
+              
             </div>
             <div>
               <h3 className="text-4xl font-bold">36+</h3>

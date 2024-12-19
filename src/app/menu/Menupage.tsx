@@ -1,14 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import image from './public/rect.png';
-import Food from "../components/checkout"
-import Food2 from "../shops/Shop"
+import image from '../public/rect.png';
+
 
 const MenuPage: React.FC = () => {
   return (
     <div id="/menu">
-      <Food2/>
-      <Food/>
+      
     <div className="bg-black font-sans">
       <header className="bg-cover bg-center h-48 flex items-center justify-center" >
         <h1 className="text-5xl font-bold text-white tracking-wide">Our Menu</h1>
