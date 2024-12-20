@@ -3,7 +3,7 @@ import CheckoutPage from './Hero';
 
 function checkout() {
   return (
-    <div >
+    <div  id='/checkout'>
       <CheckoutPage/>
     </div>
   )

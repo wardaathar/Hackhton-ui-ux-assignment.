@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function SignInPage() {
   return (
-    <div  id='/signin'>
+    <div  className='/signin'>
     <div  className="min-h-screen bg-white">
       {/* Header */}
       <header className="relative bg-black">
