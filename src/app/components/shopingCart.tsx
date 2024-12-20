@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 interface CartItem {
   id: number;
@@ -59,9 +60,11 @@ const ShoppingCart = () => {
               <span className="text-lg font-semibold">${calculateTotal()}</span>
             </div>
             <div className="mt-4 flex justify-between">
-              <button className="bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition">
-                Checkout
-              </button>
+            <Link href="/checkout">
+      <button className="bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition">
+        Checkout
+      </button>
+    </Link>
             </div>
             <div className="mt-4 flex justify-between">
               <button

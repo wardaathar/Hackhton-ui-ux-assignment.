@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5"; // Search Icon
 import { PiHandbagBold } from "react-icons/pi"; // Handbag Icon
+import Image from "next/image"
 import {
   Sheet,
   SheetContent,
@@ -67,6 +68,13 @@ export default function Navbar() {
             />
             <IoSearch className="text-orange-500 ml-2" />
           </div>
+          <div className="hidden lg:flex items-center gap-4">
+          
+          <Link href='/signin' className="text-white hover:text-[#FF9F0D] transition-colors">
+            <Image src="/user.png" alt="user" width={15} height={15} />
+          </Link>
+          
+        </div>
         </div>
 
         <div className="ml-8 flex items-center">
@@ -137,6 +145,14 @@ export default function Navbar() {
           />
           <IoSearch className="text-orange-500 ml-2" />
         </div>
+        <div className="hidden lg:flex items-center gap-4">
+          
+          <Link href='/signin' className="text-white hover:text-[#FF9F0D] transition-colors">
+            <Image src="/user.png" alt="user" width={15} height={15} />
+          </Link>
+          
+        </div>
+     
 
         {/* Shopping Bag Icon - Mobile */}
         <div className="mt-4 flex justify-between">

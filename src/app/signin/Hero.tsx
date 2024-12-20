@@ -1,19 +1,22 @@
+
 import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
-import { FcGoogle } from "react-icons/fc";
-import { ImAppleinc } from "react-icons/im";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Image from "next/image";
 
 export default function SignInPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div  id='/signin'>
+    <div  className="min-h-screen bg-white">
       {/* Header */}
-      <header className=" bg-black">
+      <header className="relative bg-black">
       {/* Background Image */}
       <div
-        className="h-[300px] md:h-[400px] lg:h-[500px] bg-cover bg-center"
-        style={{ backgroundImage: "url('/heropic.png')" }}>
+        className="h-[300px] md:h-[400px] lg:h-[500px] bg-cover  bg-black bg-center">
     
-       
+        {/* Navbar */}
+        <Navbar />
       
         {/* Centered Text */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
@@ -21,7 +24,7 @@ export default function SignInPage() {
           <p className="text-sm md:text-base lg:text-lg mt-2 flex items-center gap-2">
             <span className="text-white ">Home</span>
             <IoChevronForwardOutline />
-            <span  className="text-[#FF9F0D]">Sign In</span>
+            <span className="text-[#FF9F0D]">Sign In</span>
           </p>
         </div>
       </div>
@@ -67,23 +70,24 @@ export default function SignInPage() {
               Sign In
             </button>
             <p className="text-center mt-4">
-              <Link href="/forgot-password" className="text-yellow-500">Forgot password?</Link>
+              <Link href="#forgot-password" className="text-yellow-500">Forgot password?</Link>
             </p>
           </form>
           <div className="text-center mt-8">
             <p>or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-            <FcGoogle className="h-6 mr-2" />
+              <Image src="public/Google.png" alt="Google" className="h-6 mr-2" />
               Sign in with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <ImAppleinc className="h-6 mr-2" />
+              <Image src="public/Apple.png" alt="Apple" className="h-6 mr-2" />
               Sign in with Apple
             </button>
           </div>
         </div>
       </section>
-
-         </div>
-  );
+      </div>
+<Footer/>
+</div>  
+  );
 }
