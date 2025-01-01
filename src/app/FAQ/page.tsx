@@ -1,7 +1,7 @@
 import React from 'react'
 import Faq from '../components/faq'
 
-const FAQpage = () => {
+const FAQ = () => {
   return (
     <div>
     <Faq/>
@@ -9,4 +9,4 @@ const FAQpage = () => {
   )
 }
 
-export default FAQpage
+export default  FAQ
