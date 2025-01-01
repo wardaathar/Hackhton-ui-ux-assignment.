@@ -1,12 +1,12 @@
 import React from 'react';
 import Menu from "../shopping/Shoplist";
 import Menuco from "../components/Menupage";
-import Chef from  "../components/chef"
+import Chef from  "../components/Chef"
 
 
 const MenuPage: React.FC = () => {
   return (
-    <div id="/menu">
+    <div >
        <Menu/>
        <Menuco/>
        <Chef/>

@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5"; // Search Icon
 import { PiHandbagBold } from "react-icons/pi"; // Handbag Icon
-import Image from "next/image"
+
+import { FaRegUser } from "react-icons/fa";
 import {
   Sheet,
   SheetContent,
@@ -38,10 +39,7 @@ export default function Navbar() {
             <Link href="/menu" className="hover:text-orange-500 transition">
               Menu
             </Link>
-           
-            <Link href="/signup" className="hover:text-orange-500 transition">
-              Signup
-            </Link>
+          
             <Link href="/about" className="hover:text-orange-500 transition">
               About
             </Link>
@@ -54,9 +52,7 @@ export default function Navbar() {
             <Link href="/shop" className="hover:text-orange-500 transition">
               Shop
             </Link>
-            <Link href="#blog" className="hover:text-orange-500 transition">
-              Blog
-            </Link>
+            
           </div>
 
           {/* Search Bar */}
@@ -66,12 +62,12 @@ export default function Navbar() {
               placeholder="Search..."
               className="bg-transparent text-white placeholder-gray-400 focus:outline-none w-full text-sm"
             />
-            <IoSearch className="text-orange-500 ml-2" />
+            <IoSearch className="hover:text-orange-500 ml-2" />
           </div>
           <div className="hidden lg:flex items-center gap-4">
           
-          <Link href='/signin' className="text-white hover:text-[#FF9F0D] transition-colors">
-            <Image src="/user.png" alt="user" width={15} height={15} />
+          <Link href='/signup' className="text-white hover:text-[#FF9F0D] transition-colors">
+            <FaRegUser  className="hover:text-orange-500 ml-2"  />
           </Link>
           
         </div>
@@ -115,10 +111,7 @@ export default function Navbar() {
           <Link href="/menu" className="hover:text-orange-500 transition">
             Menu
           </Link>
-          
-          <Link href="/signup" className="hover:text-orange-500 transition">
-            Signup
-          </Link>
+        
           <Link href="/about" className="hover:text-orange-500 transition">
             About
           </Link>
@@ -131,9 +124,7 @@ export default function Navbar() {
           <Link href="/shop" className="hover:text-orange-500 transition">
               Shop
               </Link>
-          <Link href="#blog" className="hover:text-orange-500 transition">
-              Blog
-            </Link>
+         
         </div>
 
         {/* Search Bar */}
@@ -143,12 +134,12 @@ export default function Navbar() {
             placeholder="Search..."
             className="bg-transparent text-white placeholder-gray-400 focus:outline-none w-full text-sm"
           />
-          <IoSearch className="text-orange-500 ml-2" />
+          <IoSearch className="hover:text-orange-500 ml-2" />
         </div>
         <div className="hidden lg:flex items-center gap-4">
           
-          <Link href='/signin' className="text-white hover:text-[#FF9F0D] transition-colors">
-            <Image src="/user.png" alt="user" width={15} height={15} />
+          <Link href='/signup' className="text-white hover:text-[#FF9F0D] transition-colors">
+          <FaRegUser  className="hover:text-orange-500 ml-2"  />
           </Link>
           
         </div>
@@ -156,7 +147,7 @@ export default function Navbar() {
 
         {/* Shopping Bag Icon - Mobile */}
         <div className="mt-4 flex justify-between">
-          <PiHandbagBold className="text-white text-2xl hover:text-orange-500 transition" />
+       
 
           {/* Open Cart on Click for Mobile */}
           <Sheet>

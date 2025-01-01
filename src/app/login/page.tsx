@@ -1,10 +1,10 @@
 import React from 'react'
-import Checkout from '../components/Checkout'
+import Login from "./login"
 
-function Page() {
+const Page = () => {
   return (
     <div>
-      <Checkout/>
+    <Login/>
     </div>
   )
 }

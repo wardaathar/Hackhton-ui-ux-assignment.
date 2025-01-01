@@ -1,13 +1,18 @@
 
-
 import React from "react";
+import Hero from "../faq/faq";
+import Link from "next/link";
 
 
 const Faq = () => {
   return (
-    <main id="/faq">
+    <>
+    <Hero/>
+  
+    <main className="/faq">
+      
       {/* Title */}
-      <h1 className="mt-[100px] text-black text-center text-[40px] font-semibold capitalize">
+      <h1 className="mt-[100px] text-center text-[40px] font-semibold capitalize">
         Questions look here
       </h1>
       <p className="text-black text-center">
@@ -95,6 +100,7 @@ const Faq = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 

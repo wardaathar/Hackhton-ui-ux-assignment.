@@ -1,9 +1,9 @@
 import Image from "next/image"
 import cheakout from "../public/Tote.png"
 
-export default function CheckoutPage() {
+export default function Checkout() {
   return (
-    <div className='/checkout'>
+    <div  className="/checkout">
     <main className="bg-black">
     <div className="container bg mx-auto px-4 py-8">
       <div className="grid gap-8 lg:grid-cols-2">

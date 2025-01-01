@@ -41,9 +41,7 @@ const Shops: React.FC = () => {
 
   return (
     <div id='/shop' className="bg-black text-white font-sans">
-      <header className="bg-cover bg-center h-48 flex items-center justify-center" >
-        <h1 className="text-5xl font-bold text-white tracking-wide">Shop List</h1>
-      </header>
+     
       <main className="py-12 px-6 md:px-16 lg:px-28">
         <table className="w-full border-collapse">
           <thead>

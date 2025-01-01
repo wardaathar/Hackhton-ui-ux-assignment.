@@ -1,11 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import image from '../public/rect.png';
+import Hero from './Hero';
 
 
 const MenuPage: React.FC = () => {
   return (
+  
     <div id="/menu">
+
       
     <div className="bg-black font-sans">
       <header className="bg-cover bg-center h-48 flex items-center justify-center" >
@@ -137,6 +140,7 @@ const MenuPage: React.FC = () => {
       </main>
     </div>
     </div>
+  
   );
 };
 

@@ -1,6 +1,6 @@
 
 import Hero from '../app/components/Hero';
-import Chef from "./components/chef";
+import Chef from "./components/Chef";
 import FoodCategory from './components/Food';
 import MenuPage from "./components/Menupage";
 import MenuCom from './components/Shop';
@@ -13,7 +13,6 @@ export default function Home() {
   return (
 
     <main>
-
       <Hero />
       <About />
       <MenuCom />

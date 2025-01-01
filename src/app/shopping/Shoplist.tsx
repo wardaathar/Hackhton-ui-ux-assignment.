@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from "next/image";
+import Hero from "../../app/menu/Hero";
 
 
 const menuItems = [
@@ -17,7 +18,10 @@ const menuItems = [
 
 const MenuCom = () => {
   return (
+    <> 
+    <Hero/>
     <div className='/shop'>
+  
     <section className='bg-black px-8 sm:px-16 lg:px-[135px] text-white py-12'>
       <div className="container mx-auto">
         <h2 className="text-2xl font-bold text-center mb-2">Choose & Pick</h2>
@@ -55,6 +59,7 @@ const MenuCom = () => {
       </div>
     </section>
     </div>
+    </>
   );
 };
 

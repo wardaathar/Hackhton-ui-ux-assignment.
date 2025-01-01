@@ -19,11 +19,11 @@ const MenuPage: React.FC = () => {
         <h1 className="text-5xl font-bold text-white tracking-wide">Food Categary</h1>
       </header>
 
-      <main className="py-12 px-6 md:px-16 lg:px-28">
+      <main className="py-12 px-6 md:px-16 lg:px-28 ">
         {/* Appetizers Section */}
         <section className="mb-16 " >
           <h2 className="text-2xl font-semibold mb-4">Appetizers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex">
             <Image src={cart5} alt="" 
            width={100}
@@ -43,7 +43,7 @@ const MenuPage: React.FC = () => {
         {/* Main Course Section */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Main Course</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex">
               <Image
                  src={cart4} alt="" 
@@ -64,7 +64,7 @@ const MenuPage: React.FC = () => {
         {/* Dessert Section */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Desserts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex">
               <Image
                 src={dessert}
@@ -86,8 +86,8 @@ const MenuPage: React.FC = () => {
         {/* Drinks Section */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Drinks</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex">
+          <div className="grid grid-cols- md:grid-cols-2 gap-4">
+            <div className="flex flex-col lg:flex-row">
               <Image
                 src={drinks}
                 alt=""
@@ -111,13 +111,7 @@ const MenuPage: React.FC = () => {
             <div>
               <h3 className="text-4xl font-bold">420+</h3>
               <p className="text-sm text-gray-600">Satisfied Customers</p>
-              <Image
-                src={drinks}
-                alt=""
-                width={100}
-                height={100}
-                className="w-24 h-24 object-cover rounded mr-4"
-              />
+            
             </div>
             <div>
               <h3 className="text-4xl font-bold">250+</h3>
