@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import image from '../public/rect.png';
-import Hero from './Hero';
+
 
 
 const MenuPage: React.FC = () => {

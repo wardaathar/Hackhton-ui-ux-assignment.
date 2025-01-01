@@ -1,7 +1,7 @@
 
 import React from "react";
 import Hero from "../faq/faq";
-import Link from "next/link";
+
 
 
 const Faq = () => {
