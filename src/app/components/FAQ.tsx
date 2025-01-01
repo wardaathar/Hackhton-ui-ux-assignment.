@@ -1,6 +1,6 @@
 
 import React from "react";
-import Hero from "../faq/faq";
+import Hero from "../FAQ/faq";
 
 
 
