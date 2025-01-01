@@ -1,6 +1,6 @@
 
 import Hero from '../app/components/Hero';
-import Chef from "./components/Chef";
+import Chef from "./components/chef";
 import FoodCategory from './components/Food';
 import MenuPage from "./components/Menupage";
 import MenuCom from './components/Shop';

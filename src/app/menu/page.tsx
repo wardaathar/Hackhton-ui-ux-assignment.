@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from "../shopping/Shoplist";
 import Menuco from "../components/Menupage";
-import Chef from  "../components/Chef"
+import Chef from  "../components/chef"
 
 
 const MenuPage: React.FC = () => {
