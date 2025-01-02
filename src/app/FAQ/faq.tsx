@@ -1,29 +1,107 @@
 
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Hero from "./hero";
 
 
-function Hero() {
+
+const Faq = () => {
   return (
-    <section  className='w-full bg-[url("/heropic.png")] bg-cover bg-no-repeat bg-center py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28'>
-      <div className='container mx-auto px-4'>
-        <div className='flex flex-col items-center'>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-white font-bold text-center mb-4 sm:mb-6'>
-            FAQ page
-          </h1>
-          <div className='text-base sm:text-lg md:text-xl flex gap-2 text-center justify-center'>
-            <Link href="/" className='text-white hover:text-[#FF9F0D] transition-colors duration-300'>
-              Home
-            </Link>
-            <span className='text-white'>/</span>
-            <Link href="#faq" className='text-[#FF9F0D]'>
-              FAQ page
-            </Link>
-          </div>
+    <>
+    <Hero/>
+  
+    <main className="/faq">
+      
+      {/* Title */}
+      <h1 className="mt-[100px] text-center text-[40px] font-semibold capitalize">
+        Questions look here
+      </h1>
+      <p className="text-black text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aliquid!
+      </p>
+
+      {/* FAQ Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-[40px] px-4">
+        {/* FAQ Item */}
+        <div className="bg-[#E0E0E0] rounded-md p-7">
+          <h2 className="font-semibold text-[20px] text-start">
+            How do we serve food?
+          </h2>
+          <p className="text-start pl-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            earum quisquam, ducimus, nobis, nostrum dolorum consequuntur illo
+            placeat commodi ratione voluptate. Fugit est ullam odit a
+            praesentium deserunt quisquam libero.
+          </p>
+        </div>
+
+        {/* FAQ Item */}
+        <div className="bg-[#E0E0E0] rounded-md p-7">
+          <h2 className="font-semibold text-[20px] text-start">
+            How is our food quality?
+          </h2>
+          <p className="text-start pl-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            earum quisquam, ducimus, nobis, nostrum dolorum consequuntur illo
+            placeat commodi ratione voluptate. Fugit est ullam odit a
+            praesentium deserunt quisquam libero.
+          </p>
+        </div>
+
+        {/* FAQ Item */}
+        <div className="bg-[#E0E0E0] rounded-md p-7">
+          <h2 className="font-semibold text-[20px] text-start">
+            How do we give home delivery?
+          </h2>
+          <p className="text-start pl-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            earum quisquam, ducimus, nobis, nostrum dolorum consequuntur illo
+            placeat commodi ratione voluptate. Fugit est ullam odit a
+            praesentium deserunt quisquam libero.
+          </p>
+        </div>
+
+        {/* FAQ Item */}
+        <div className="bg-[#E0E0E0] rounded-md p-7">
+          <h2 className="font-semibold text-[20px] text-start">
+            How can we get in touch with you?
+          </h2>
+          <p className="text-start pl-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            earum quisquam, ducimus, nobis, nostrum dolorum consequuntur illo
+            placeat commodi ratione voluptate. Fugit est ullam odit a
+            praesentium deserunt quisquam libero.
+          </p>
+        </div>
+
+        {/* FAQ Item */}
+        <div className="bg-[#E0E0E0] rounded-md p-7">
+          <h2 className="font-semibold text-[20px] text-start">
+            What will be delivered? And when?
+          </h2>
+          <p className="text-start pl-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            earum quisquam, ducimus, nobis, nostrum dolorum consequuntur illo
+            placeat commodi ratione voluptate. Fugit est ullam odit a
+            praesentium deserunt quisquam libero.
+          </p>
+        </div>
+
+        {/* FAQ Item */}
+        <div className="bg-[#E0E0E0] rounded-md p-7">
+          <h2 className="font-semibold text-[20px] text-start">
+            Is this restaurant 24 hours open?
+          </h2>
+          <p className="text-black text-start pl-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            earum quisquam, ducimus, nobis, nostrum dolorum consequuntur illo
+            placeat commodi ratione voluptate. Fugit est ullam odit a
+            praesentium deserunt quisquam libero.
+          </p>
         </div>
       </div>
-    </section>
-  )
-}
+    </main>
+    </>
+  );
+};
 
-export default Hero
+export default Faq;
